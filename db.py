@@ -15,11 +15,11 @@ def connect_db():
 # funkcija init_db izveido visas nepieciešamās tabulas, ja tās vēl nepastāv
 def init_db():
     """Izveido datubāzi un tabulas, ja tās vēl nepastāv."""
-    # Vispirms savienojamies bez datubāzes, lai to izveidotu
+ 
     conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="пароль"
+        host="sql.freedb.tech",
+        user="freedb_brat_andrej",
+        password="Uv5YN&e223Km4ay"
     )
     cursor = conn.cursor()
  
