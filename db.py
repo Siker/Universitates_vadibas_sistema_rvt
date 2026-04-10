@@ -1,8 +1,8 @@
 import mysql.connector
 from mysql.connector import Error
 
-
-# 🔹 Подключение к базе (ОДНА база!)
+# db.py — datubāzes savienojums un pamata SQL operācijas.
+# 🔹 Savienojums ar datubāzi (viena datubāze).
 def connect_db():
     return mysql.connector.connect(
         host="sql.freedb.tech",
@@ -12,7 +12,7 @@ def connect_db():
     )
 
 
-# 🔹 Инициализация таблиц (БЕЗ создания базы!)
+# 🔹 Tabulu inicializācija (bez datubāzes izveides).
 def init_db():
     conn = connect_db()
     cursor = conn.cursor()
@@ -86,7 +86,7 @@ def init_db():
     print("✅ Tabulas gatavas!")
 
 
-# 🔹 Пример: добавление студента
+# 🔹 Piemērs: studenta pievienošana
 def add_student(student_id, vards, uzvards, personas_kods, epasts, talrunis):
     conn = connect_db()
     cursor = conn.cursor()
@@ -109,7 +109,7 @@ def add_student(student_id, vards, uzvards, personas_kods, epasts, talrunis):
     conn.close()
 
 
-# 🔹 Пример: получить всех студентов
+# 🔹 Piemērs: saņemt visus studentus
 def get_students():
     conn = connect_db()
     cursor = conn.cursor()

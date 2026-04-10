@@ -1,3 +1,4 @@
+# main.py — konsoles saskarne un izvēlne universitātes vadības sistēmai.
 from student import Student
 from pasniedzejs import Pasniedzejs
 from kurss import Kurss
