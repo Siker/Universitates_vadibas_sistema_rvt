@@ -3,6 +3,7 @@ Mēs izstrādāsim konsoles programmu, kas simulē skolas vadības sistēmu, kur
 
 ## Funkcionalitāte
   
+- Lomas izvēle
 - Studenta pievienošana
 - Paskatīt visus studentus
 - Skatīt informāciju par studentu
@@ -60,6 +61,14 @@ tiek glabāti:
 ## Ka izmantot programmu
 
 Būs uzraksīts, ka atrast informāciju par visu
+
+### Lomas izvēle
+
+1. Uzspiediet "1" un "ENTER", ja Jūs esat students
+2. Uzspiediet "2" un "ENTER", ja Jūs esat pasniedzējs
+3. Uzspiediet "0" un "ENTER", lai iziet
+
+Un pēc tam ievadiet savu ID
 
 ### Studenti
 
